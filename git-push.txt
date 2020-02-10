@@ -1,12 +1,22 @@
-We need to have GitBash
 
-git init
-git add .
-git commit -m “First commit”
+Create a new repository on GitHub. You can also add a gitignore file, a readme and a licence if you want
+Open Git Bash
 
-The link to our Github repository
-https://github.com/oskar-software/A-Team.git
+Change the current working directory to your local project.
 
-git remote add origin https://github.com/oskar-software/A-Team.git
-git remote  -v
-git push origin master
+Initialize the local directory as a Git repository.
+	git init
+
+Add the files in your new local repository. This stages them for the first commit.
+	git add .
+
+ Commit the files that you’ve staged in your local repository.
+git commit -m "initial commit"
+
+Copy the https url of your newly created repo (https://github.com/oskar-software/A-Team.git)
+In the Command prompt, add the URL for the remote repository where your local repository will be pushed.
+	git remote add origin (remote repository URL)
+	git remote -v
+
+Push the changes in your local repository to GitHub.
+	git push origin master
