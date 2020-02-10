@@ -1,0 +1,12 @@
+We need to have GitBash
+
+git init
+git add .
+git commit -m “First commit”
+
+The link to our Github repository
+https://github.com/oskar-software/A-Team.git
+
+git remote add origin https://github.com/oskar-software/A-Team.git
+git remote  -v
+git push origin master
