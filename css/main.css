@@ -1,0 +1,39 @@
+@import url("https://use.typekit.net/ftz3ewf.css");
+
+/*Creating root colors for different elements*/
+
+:root {
+    /*for buttons*/
+    --main-color: #1d97de;
+    --secondary-color: #de1d81;
+    --footer-bc: #2e2e2e;
+}
+
+
+/*Making the box module to work on very old versions of browsers*/
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*Takes off padding and margin of page*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    /*bold:700*/
+    font-weight: 400;
+}
+
+h1 {
+    color: var(--secondary-color);
+}
