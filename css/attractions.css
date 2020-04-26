@@ -1,0 +1,117 @@
+body, html {
+    font: 1em sans-serif;
+    padding: 0;
+    margin : 0;
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: whitesmoke;
+}
+
+/*hero image*/
+.hero-image-attractions {
+    width: 100%;
+  }
+.hero-image-attractions img {
+    width: 100%;
+    height: 65vh;
+}
+
+/*heading*/
+.container-heading {
+    height: auto;
+    width: 100%;
+    text-align: left;
+    background-color: #1d97de;
+    color: white;
+    margin-top: -0.3%;
+}
+.container-heading h2 {
+    margin: 0 0 0 10%;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+/*attractions flexbox*/
+.attractions-text {
+    width: 80%;
+    margin-left: 10%;
+}
+.attractions-text h3 {
+    color: #de1d81;
+    font-size: 1.5em;
+}
+.attractions-text h4 {
+    color: #de1d81;
+    font-size: 1.2em;
+    padding-top: 5%;
+}
+.all-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+.card-carousel {
+    flex: 1;
+    background-color: #de1d81;
+    text-align: left;
+    color: white;
+    margin: 1em;
+    cursor: pointer;
+    transition: transform 1s;
+    height: 73vh;
+    width: auto;
+}
+  .card-carousel:hover {
+    transform: translateY(-2%);
+}   
+.card-carousel img {
+    width: 100%;
+    margin: auto;
+}
+.card-carousel h2, p {
+    padding: 0% 5%;
+}
+.card-carousel p {
+    font-size: 1em;
+}
+.card-carousel a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1284px) {
+    .container-heading h2 {
+        margin-left: 5%;
+    }
+    .hero-image-attractions {
+        margin: -1%;
+    }
+    .hero-image-attractions img{
+        height: auto;
+    }
+    .all-cards {
+        width: 100%;
+    }
+    .card-carousel {
+        height: 77vh;
+        padding: 0;
+        margin: 0.5em;
+    }
+    .attractions-text {
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width: 764px) {
+    .card-carousel {
+        margin: 0.5em;
+        flex: auto;
+        height: auto;
+    }
+}
