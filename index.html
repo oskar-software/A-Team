@@ -5,16 +5,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <!-- SEO -->
+    <meta name="description" content="Dundee is a city that has many unique experiences to offer everyone - from outstanding museums like the newly opened V&A Museum, 
+    old historical castles, parks - Dundee has it all! Check our top suggestions!" />
+    <meta name="keywords" content="Dundee, attractions, what to do, culture, history, v&a, parks, games, fun,family day out">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <!--Main Css-->
-    <link rel="stylesheet" href="main.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Home</title>
 </head>
 
 <body>
-    <h1>ffdfgdf</h1>
-    <p>asdddsa</p>
-    <div>asdadsad</div>
+    <div class="nav-wrap">
+        <a class="vs_link" href="/">VISITSCOTLAND.COM</a>
+        <div class="nav-toggle">
+            <div class="nav-toggle-bar"><i class="fas fa-bars"></i></div>
+        </div>
+
+        <nav class="nav">
+            <ul>
+                <li class="active"><a href="/index.html">Home</a></li>
+                <li><a href="pages/attractions.html">Attractions</a></li>
+                <li><a href="/about">Newsletter</a></li>
+                <li><a href="pages/places.html">Accommodation</a></li>
+                <li><a href="pages/food.html">Food/Drinks</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section class="header">
+            <img src="images/VA6.jpg" alt="photo of vna">
+            <img src="images/logo-pink.png" alt="logo-pink">
+        </section>
+        <section class="visit_attra">
+            <h1>Visit Top Attractions</h1>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="slide_set">
+                        <div class="card">
+                            <img src="images/slide/mcmanus1.jpg">
+                            <p> Dundee's Art Gallery and Museum is a Gothic Revival-style building, located in the centre of Dundee, Scotland. The building houses a museum and art gallery with a collection of fine and decorative art as well as a natural history
+                                collection
+                            </p>
+                        </div>
+                        <div class="card">
+                            <img src="images/slide/lonely-planet-dundee-logo.jpg">
+                        </div>
+                        <div class="card">
+                            <img src="images/slide/VA2.jpg">
+                            <p>The V&A Dundee is the first design museum in Scotland and the first Victoria and Albert museum outside London. The V&A Dundee is also the first building in the United Kingdom that has been designed by Kengo Kuma.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="slide_set">
+                        <div class="card">
+                            <img src="images/slide/mills-observatory-angus-and-dundee-2-915px.jpg">
+                            <p>The main telescope is a 400mm (16inch) Dobsonian reflector that was acquired in 2013. The observatory also houses a Victorian 0.25m (10 inch) Cooke refractor, with a focal length of 3.75 m. It was made in York in 1871 by Thomas
+                                Cooke and the optical components are of the highest quality. The telescope is actually older than the building. The dome also houses a 0.3m (12 inch) Schmidt-Cassegrain telescope, which was purchased in 2006.</p>
+                        </div>
+                        <div class="card">
+                            <img src="images/slide/obs.png">
+                            <p>The Mills Observatory in Dundee, Scotland, is the first purpose-built public astronomical observatory in the UK. Built in 1935, the observatory is classically styled in sandstone and has a distinctive 7 m dome, which houses
+                                a Victorian refracting telescope, a small planetarium, and display areas. The dome is one of two made from papier-mâché to survive in the UK, the other being at the Godlee Observatory.</p>
+                        </div>
+                        <div class="card">
+                            <img src="images/slide/observatory2.jpg">
+                            <p>During October to March, the planetarium shows provide the chance to learn about constellations, planets and other jewels of the night sky. If you're curious about comets, mystified by meteors and want to glean a wealth of
+                                information about the galaxy, the friendly staff at Mills have the answers. There are also displays on the solar system and space exploration. From April to September, Mills is open on selected dates.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="slide_set">
+                        <div class="card">
+                            <img src="images/slide/5c8b80badef837.99162428.jpg">
+                            <p>The subsequent international design competition to create a new building was won in July 1996 by Richard Murphy Architects. The resulting building was instantly hailed as an innovative modern space. The final cost of the construction
+                                was £9 million. The centre currently receives approximately 380,000 visitors per year and in 2016 was listed in the Royal Incorporation of Architects in Scotland (RIAS) top 10 of Scotland's top 100 buildings of the 20th
+                                century.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <img src="images/slide/ff687618-13ad-4f55-afea-343fb01cbe2d.jpg">
+                            <p>DCA opened on 20 March 1999, but the idea of establishing a visual arts centre in Dundee had been discussed by many concerned parties from the mid-1980s. In particular, there was a desire to both nurture the students and graduates
+                                of Duncan of Jordanstone College of Art and Design.</p>
+                        </div>
+                        <div class="card">
+                            <img src="images/slide/Attractions - DCA.jpg">
+                            <p>Dundee Contemporary Arts (DCA) is an art centre in Dundee, Scotland, with two contemporary art galleries, a two-screen cinema, a print studio, a learning and public engagement programme, a shop and a café bar. The director
+                                of DCA is Beth Bate.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+        <section class="all_attractions">
+            <p>With its compact size and streets packed with all sorts of treasures - from architectural to cafés to atmospheric booksellers - Dundee is an urban wanderer's delight. Things to do in Dundee include going on a journey back in time at museums,
+                from the V&A to one of Europe's finest industrial museums, or stepping on board Dundee's floating attractions.</p>
+            <a href="pages/attractions.html">View all Attractions</a>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_contact">
+            <h2>VISITSCOTLAND.COM</h2>
+            <p>Contact us:</p>
+            <p>087 1236 5413</p>
+        </div>
+        <div class="footer_nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/pages/attractions.html">Attractions</a></li>
+                <li><a href="/pages/newsletter.html">Newsletter</a></li>
+                <li><a href="/pages/places.html">Accommodation</a></li>
+                <li><a href="/pages/food.html">Food/Drinks</a></li>
+            </ul>
+        </div>
+        <div class="social_media">
+            <p>Follow us:</p>
+            <div class="icon_wrap">
+                <img src="images/facebook.png" alt="facebook icon">
+                <img src="images/instagram.png" alt="instagram icon">
+                <img src="images/twitter.png" alt="twitter icon">
+            </div>
+        </div>
+    </footer>
+    <!--java-->
+    <script src="js/nav.js"></script>
+    <script src="js/slide.js"></script>
 </body>
 
 </html>

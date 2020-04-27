@@ -1,0 +1,124 @@
+@media screen and (max-width:1300px) {
+    .card:nth-child(3) {
+        display: none;
+    }
+    .slideshow-container {
+        max-width: 900px;
+    }
+    .container-heading h2 {
+        margin-left: 5%;
+    }
+    .hero-image-attractions img {
+        height: auto;
+    }
+    .all-cards {
+        width: 100%;
+    }
+    .card-carousel {
+        height: 116vh;
+        padding: 0;
+        margin: 0.5rem;
+    }
+    .attractions-text {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    /* nav toggle */
+    .nav-toggle {
+        display: block;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        height: 2rem;
+        right: 2rem;
+        position: fixed;
+        top: 2rem;
+        width: 3.6rem;
+        z-index: 2;
+        text-align: center;
+    }
+    /* nav */
+    .nav {
+        -webkit-transition: right 0.5s ease;
+        -moz-transition: right 0.5s ease;
+        -ms-transition: right 0.5s ease;
+        -o-transition: right 0.5s ease;
+        transition: right 0.5s ease;
+        background: var(--main-color);
+        color: var(--secondary-color);
+        cursor: pointer;
+        font-size: 1.5rem;
+        height: 100vh;
+        right: -320px;
+        padding-top: 4rem;
+        position: fixed;
+        top: 0;
+        width: 320px;
+        z-index: 1;
+    }
+    .nav.expanded {
+        right: 0;
+        width: 320px;
+    }
+    .nav ul {
+        position: absolute;
+        top: 45%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        list-style: none;
+        margin-top: 47px;
+        padding: 0;
+        width: 100%;
+    }
+    .nav-wrap nav ul li {
+        display: block;
+        text-align: center;
+        margin-top: 0.8rem;
+    }
+    .nav-wrap nav ul li a {
+        display: block;
+    }
+    .nav-wrap {
+        justify-content: space-between;
+    }
+    .main_food,
+    .side_food {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:764px) {
+    .flex-container {
+        display: block;
+    }
+    .flex-container>div {
+        width: 100%;
+    }
+    .card:nth-child(1) {
+        display: none;
+    }
+    .slideshow-container {
+        max-width: 700px;
+    }
+    .slide_set {
+        justify-content: space-around;
+    }
+    .card,
+    .card img {
+        max-width: 300px;
+    }
+    .card-carousel {
+        height: 88vh;
+        margin: 0.5em;
+        flex: auto;
+        height: auto;
+    }
+    .main_food,
+    .side_food {
+        width: 100%;
+    }
+}

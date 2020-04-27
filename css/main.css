@@ -18,6 +18,10 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    font-size: 20px;
+}
+
 
 /*Takes off padding and margin of page*/
 
@@ -36,4 +40,496 @@ body {
 
 h1 {
     color: var(--secondary-color);
+}
+
+.nav-wrap {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    background-color: var(--main-color);
+    height: 100px;
+    margin-bottom: 0.5em;
+    z-index: 10;
+}
+
+.vs_link {
+    align-self: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.nav-wrap nav ul li a {
+    padding: 1rem;
+}
+
+.nav-wrap nav ul li {
+    display: inline;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul {
+    margin-right: 2rem;
+}
+
+.nav-wrap nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-toggle {
+    display: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.active {
+    background-color: var(--secondary-color) !important;
+}
+
+main {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.header img {
+    width: 100%;
+}
+
+.header img:nth-child(2) {
+    margin-top: -7px;
+}
+
+.visit_attra h1 {
+    color: var(--main-color);
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1400px;
+    position: relative;
+    margin: 30px auto;
+}
+
+.slide_set {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    text-align: center;
+}
+
+.card img {
+    max-width: 430px;
+    height: 300px;
+}
+
+.card p {
+    text-align: left;
+    max-width: 430px;
+    padding: 5px;
+    margin-top: -8px;
+    color: white;
+    background-color: var(--footer-bc);
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    padding: 15px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev,
+.next {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.target,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.img_container {
+    width: 30%;
+}
+
+.img_container img {
+    max-width: 100%;
+}
+
+.all_attractions {
+    text-align: left;
+    margin-top: 60px;
+}
+
+.all_attractions a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    width: 30%;
+    border-radius: 20px;
+    margin: auto;
+    background: var(--main-color);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding: 2rem;
+    background-color: var(--footer-bc);
+    color: white;
+}
+
+.footer_contact h2 {
+    font-size: 22px;
+}
+
+.footer_contact h2,
+.footer_contact p:nth-child(2),
+.footer_nav ul li a,
+.social_media {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.footer_nav ul {
+    list-style: none;
+}
+
+.icon_wrap img {
+    width: 40px;
+    height: 40px;
+}
+
+.icon_wrap img:nth-child(2) {
+    width: 48px;
+    height: 40px;
+    padding: 5px;
+}
+
+
+/*hero image*/
+
+.hero-image-attractions {
+    width: 100%;
+}
+
+.hero-image-attractions img {
+    width: 100%;
+    height: 65vh;
+}
+
+
+/*heading*/
+
+.container-heading {
+    height: auto;
+    width: 100%;
+    text-align: left;
+    background-color: #1d97de;
+    color: white;
+    margin-top: -0.3%;
+}
+
+.container-heading h2 {
+    margin: 0 0 0 10%;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+
+/*attractions flexbox*/
+
+.attractions-text {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.attractions-text h3 {
+    color: #de1d81;
+    font-size: 1.5em;
+}
+
+.attractions-text h4 {
+    color: #de1d81;
+    font-size: 1.2em;
+    padding-top: 5%;
+}
+
+.all-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.card-carousel {
+    flex: 1;
+    background-color: #de1d81;
+    text-align: left;
+    color: white;
+    margin: 1em;
+    cursor: pointer;
+    transition: transform 1s;
+    height: 73vh;
+    width: auto;
+}
+
+.card-carousel:hover {
+    transform: translateY(-2%);
+}
+
+.card-carousel img {
+    width: 100%;
+    margin: auto;
+}
+
+.card-carousel h2,
+p {
+    padding: 0% 5%;
+}
+
+.card-carousel p {
+    font-size: 1em;
+}
+
+.card-carousel a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* food Page */
+
+.food_header_size {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.row_food {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+/*sidebar/right column*/
+
+.side_food,
+.main_food {
+    background-color: #1d97de;
+    padding: 10px;
+    color: white;
+    border: 1px solid white;
+    width: 30%;
+}
+
+.main_food img,
+.side_food img {
+    width: 100%;
+    max-height: 650px;
+}
+
+.side_food p,
+.main_food p {
+    margin-bottom: 24px;
+}
+
+.food_buttons {
+    background-color: #de1d81;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+
+/* Places Page */
+
+
+/*Make main image at top of page responsive*/
+
+.header {
+    padding-top: 100px;
+}
+
+.responsive {
+    max-width: 100%;
+    margin: 0;
+}
+
+.intro h1 {
+    font-family: regulator-nova, sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+    color: #1d97de;
+}
+
+.body_text {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.sub_heading {
+    font-family: regulator-nova, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #1d97de;
+}
+
+.imgover:hover {
+    opacity: 0.7;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: white;
+}
+
+.flex-container>div {
+    background-color: white;
+    /*padding: 20px;*/
+    width: 32%;
+    position: relative;
+}
+
+
+/* newsletter */
+
+.container {
+    height: auto;
+    width: 80%;
+    text-align: left;
+    margin-left: 10%;
+}
+
+input[type=text],
+input[type=email],
+input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=checkbox] {
+    margin-top: 16px;
+}
+
+input[type=submit] {
+    background-color: #1d97de;
+    color: white;
+    border: none;
+    width: 100%;
+}
+
+input[type=submit]:hover {
+    background-color: #de1d81;
+    opacity: 0.8;
+}
+
+textarea {
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 300px;
+    max-height: 300px;
 }
