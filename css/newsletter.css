@@ -1,0 +1,60 @@
+/*hero-image*/
+
+.header{
+  padding: 0;
+  margin: 0;
+}
+
+.responsive{
+  max-width:100%;
+  margin: 0;
+}
+
+/*heading*/
+.container-heading {
+    height: auto;
+    width: 100%;
+    text-align: left;
+    background-color: #1d97de;
+    color: white;
+    margin-top: -0.3%;
+}
+
+.container-heading h2 {
+    margin: 0 0 0 10%;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+/*form*/
+
+.container{
+    height: auto;
+    width: 80%;
+    text-align: left;
+    margin-left: 10%;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: #1d97de;
+  color: white;
+  border: none;
+  width: 100%;
+}
+
+input[type=submit]:hover {
+  background-color: #de1d81;
+  opacity: 0.8;
+}
