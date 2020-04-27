@@ -9,24 +9,35 @@
 
   <!--Main Css-->
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/newsletter.css">
   <title>Newsletter</title>
 </head>
 
 <body>
-
+  <div class="header">
+    <img src="img/cow.jpg" alt="highland cow" class="responsive">
+</div>
+<div class="container-heading">
+  <h2>Newsletter</h2>
+</div>
   <form action="subscribed.html">
     <div class="container">
       <h1>Subscribe to our Newsletter</h1>
       <h3>Subscribe to our newsletter to always be notified when the next event in happening in dundee!</h3>
     </div>
 
-    <div class="container" style="background-color:white">
-      <input type="text" placeholder="Name" name="name" required>
-      <input type="text" placeholder="Email address" name="mail" required>
-      <label>
-        <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
-      </label>
+    <div class="container">
+      <br>
+      <h3>Name<h3>
+      <input type="text" placeholder="John Smith" name="name" required>
+      <h3>Email<h3>
+      <input type="text" placeholder="dundee@dundee.co.uk" name="email" required>
+      <h3>Confirm email<h3>
+      <input type="text" placeholder="dundee@dundee.co.uk" name="confirm-email" required>
+      <br>
+      <h3>Tell us a bit about yourself<h3>
+      <br>
+      <textarea name="message" rows="10" cols="215"></textarea>
     </div>
 
     <div class="container">
